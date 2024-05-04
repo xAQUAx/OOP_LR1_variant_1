@@ -127,7 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CarNissan.cpp" />
+    <ClCompile Include="CurrentInfo.cpp" />
     <ClCompile Include="OOP_LR1_variant_1.cpp" />
+    <ClCompile Include="StatisticInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CarNissan.h" />
+    <ClInclude Include="CurrentInfo.h" />
+    <ClInclude Include="IDisplayElement.h" />
+    <ClInclude Include="IObservers.h" />
+    <ClInclude Include="StatisticInfo.h" />
+    <ClInclude Include="subject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
