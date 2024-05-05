@@ -1,7 +1,7 @@
+#include "CarToyota.h"
 #include <iostream>
-#include "CarNissan.h"
 
-CarNissan::CarNissan()
+CarToyota::CarToyota()
 {
 	this->observers = new IObservers * [3];
 	for (int i = 0; i < 3; i++)
@@ -10,12 +10,12 @@ CarNissan::CarNissan()
 	}
 }
 
-CarNissan::~CarNissan()
+CarToyota::~CarToyota()
 {
 	delete[]observers;
 }
 
-void CarNissan::registerObserver(IObservers* a)
+void CarToyota::registerObserver(IObservers* a)
 {
 	for (int i = 0; i < 3; i++)
 	{
@@ -28,7 +28,7 @@ void CarNissan::registerObserver(IObservers* a)
 	std::cout << "No position for Observer " << std::endl;
 }
 
-void CarNissan::removeObserver(IObservers* a)
+void CarToyota::removeObserver(IObservers* a)
 {
 	for (int i = 0; i < 3; i++)
 	{
@@ -41,7 +41,7 @@ void CarNissan::removeObserver(IObservers* a)
 	std::cout << "Observer is not in the list " << std::endl;
 }
 
-void CarNissan::notifyObserver()
+void CarToyota::notifyObserver()
 {
 	for (int i = 0; i < 3; i++)
 	{
@@ -52,7 +52,7 @@ void CarNissan::notifyObserver()
 	}
 }
 
-void CarNissan::getMeasurements()
+void CarToyota::getMeasurements()
 {
 	std::cout << "Position car: ";
 	std::cin >> this->position;
