@@ -13,15 +13,19 @@ int main()
 	CurrentInfo currentInfo;
 	StatisticInfo statisticInfo;
 
+	int lap = 1;
+
 	nissan.registerObserver(&currentInfo);
 	nissan.registerObserver(&statisticInfo);
 
 	while (true)
 	{
+		cout << "Lap: " << lap << endl;
 		nissan.getMeasurements();
 
 		currentInfo.display();
 		statisticInfo.display();
+		lap++;
 	}
 
 	return 0;
