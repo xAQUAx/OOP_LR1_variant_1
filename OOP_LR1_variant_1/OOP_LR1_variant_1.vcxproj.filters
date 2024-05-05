@@ -27,9 +27,6 @@
     <ClCompile Include="StatisticInfo.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="CarToyota.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IObservers.h">
@@ -48,9 +45,6 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="StatisticInfo.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="CarToyota.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
